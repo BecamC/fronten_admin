@@ -1,6 +1,6 @@
 import { type ReactNode, useEffect } from "react";
-import { useNavigate } from "react-router";
-import useToken from "../contexts/TokenContext";
+import { useNavigate } from "react-router-dom";
+import { useToken } from "../contexts/TokenContext";
 
 type ProtectedRouteProps = {
   children: ReactNode;
@@ -12,7 +12,7 @@ function ProtectedRoute({ children }: ProtectedRouteProps) {
 
   useEffect(() => {
     if (!token) {
-      navigate("/");
+      navigate("/login");
     }
   }, [token, navigate]);
 
