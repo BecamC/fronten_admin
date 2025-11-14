@@ -16,7 +16,7 @@ export default function Dashboard() {
       <div className="max-w-4xl mx-auto">
         <div className="bg-black rounded-lg shadow-lg p-8 border-2 border-white">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-4xl font-bold text-black mb-4">Pagina Administrativa</h1>
+            <h1 className="text-4xl font-bold text-white mb-4">Pagina Administrativa</h1>
             <button
               onClick={handleLogout}
               className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-800 transition-colors duration-200 font-semibold border-2 border-black"
