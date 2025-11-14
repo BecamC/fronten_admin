@@ -27,34 +27,34 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
+    <div className="min-h-screen bg-black flex items-center justify-center p-4">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md border-2 border-black">
+        <h2 className="text-3xl font-bold mb-6 text-center text-black">
           Login
         </h2>
         <form onSubmit={handleLogin} className="space-y-4">
           <input
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+            className="w-full px-4 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-black bg-white"
             placeholder="Email"
             type="email"
             name="email"
             required
           />
           <input
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+            className="w-full px-4 py-2 border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-black bg-white"
             placeholder="Password"
             type="password"
             name="password"
             required
           />
           <button
-            className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition-colors duration-200 font-semibold"
+            className="w-full bg-red-600 text-white py-3 rounded-md hover:bg-red-800 transition-colors duration-200 font-semibold border-2 border-black"
             type="submit"
           >
             Log in
           </button>
         </form>
-        <p className="mt-4 text-sm text-gray-500 text-center">
+        <p className="mt-4 text-sm text-black text-center">
           Enter any email and password to login (mock mode)
         </p>
       </div>
