@@ -68,6 +68,207 @@ header img {
   object-fit: contain;
 }
 
+/* Estilos para la tabla de pedidos */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: white;
+  border: 2px solid #8B4513;
+  overflow-x: auto;
+  display: block;
+  max-height: 600px;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+.orders-table::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.orders-table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.orders-table::-webkit-scrollbar-thumb {
+  background: #ff6600;
+  border-radius: 6px;
+}
+
+.orders-table::-webkit-scrollbar-thumb:hover {
+  background: #e55a00;
+}
+
+.orders-table thead {
+  background-color: #8B4513;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.orders-table thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.orders-table tbody {
+  display: block;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.orders-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  text-align: left;
+  border-right: 2px solid #8B4513;
+  word-wrap: break-word;
+}
+
+.orders-table th:last-child,
+.orders-table td:last-child {
+  border-right: none;
+}
+
+.orders-table th {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.orders-table td {
+  color: black;
+  background-color: white;
+}
+
+.orders-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Columnas de la tabla */
+.orders-table th:nth-child(1),
+.orders-table td:nth-child(1) {
+  width: 120px;
+  min-width: 120px;
+}
+
+.orders-table th:nth-child(2),
+.orders-table td:nth-child(2) {
+  width: 140px;
+  min-width: 140px;
+}
+
+.orders-table th:nth-child(3),
+.orders-table td:nth-child(3) {
+  width: 180px;
+  min-width: 180px;
+}
+
+.orders-table th:nth-child(4),
+.orders-table td:nth-child(4) {
+  width: 180px;
+  min-width: 180px;
+}
+
+.orders-table th:nth-child(5),
+.orders-table td:nth-child(5) {
+  width: 180px;
+  min-width: 180px;
+}
+
+.orders-table th:nth-child(6),
+.orders-table td:nth-child(6) {
+  width: 180px;
+  min-width: 180px;
+}
+
+.orders-table th:nth-child(7),
+.orders-table td:nth-child(7) {
+  width: 180px;
+  min-width: 180px;
+}
+
+/* Estilos para las celdas con fecha y tiempo */
+.order-status-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-date {
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.order-time {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.order-status-cell-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.order-status-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Botón de play */
+.play-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: #666;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.play-button:hover {
+  background-color: #555;
+}
+
+.play-button.active {
+  background-color: #ff6600;
+}
+
+.play-button.active:hover {
+  background-color: #e55a00;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  margin-left: 2px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #000000;

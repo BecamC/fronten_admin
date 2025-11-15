@@ -16,7 +16,7 @@ export default function Dashboard() {
     <div className="min-h-screen">
       <Header />
       <div className="p-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="bg-black bg-opacity-80 rounded-lg shadow-lg p-8 border-2 border-white">
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-4xl font-bold text-white mb-4">Pagina Administrativa</h1>
@@ -40,7 +40,7 @@ export default function Dashboard() {
             )}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             <button
               className="bg-red-600 text-white px-6 py-4 rounded-lg hover:bg-red-800 transition-colors duration-200 font-semibold text-left border-2 border-black"
               onClick={() => alert("Button 1 clicked!")}
@@ -68,6 +68,26 @@ export default function Dashboard() {
             >
               Cliente recibio su pedido
             </button> 
+          </div>
+
+          {/* Tabla de pedidos */}
+          <div className="mt-8">
+            <table className="orders-table">
+              <thead>
+                <tr>
+                  <th>ID PEDIDO</th>
+                  <th>ENCARGADO</th>
+                  <th>CREADO</th>
+                  <th>PENDIENTE</th>
+                  <th>PREPARADO</th>
+                  <th>ENVIADO</th>
+                  <th>RECIBIDO</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
