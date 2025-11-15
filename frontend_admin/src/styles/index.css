@@ -27,6 +27,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('https://proyecto-final-20252.s3.us-east-1.amazonaws.com/fondopollo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #000000;
   color: #ffffff;
 }
@@ -55,6 +60,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto #dc2626;
+}
+
+header img {
+  height: 200px;
+  max-width: 200px;
+  object-fit: contain;
 }
 
 @media (prefers-color-scheme: light) {

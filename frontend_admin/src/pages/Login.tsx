@@ -2,6 +2,7 @@ import { useToken } from "../contexts/TokenContext";
 import { useNavigate } from "react-router-dom";
 import { useLogin } from "../api";
 import { type FormEvent } from "react";
+import Header from "../components/Header";
 
 
 export default function Login() {
@@ -27,7 +28,9 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-4">
+    <div className="min-h-screen">
+      <Header />
+      <div className="flex items-center justify-center p-4 min-h-[calc(100vh-80px)]">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md border-2 border-black">
         <h2 className="text-3xl font-bold mb-6 text-center text-black">
           Login
@@ -57,6 +60,7 @@ export default function Login() {
         <p className="mt-4 text-sm text-black text-center">
           Enter any email and password to login (mock mode)
         </p>
+      </div>
       </div>
     </div>
   );

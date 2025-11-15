@@ -1,6 +1,7 @@
 import { useToken } from "../contexts/TokenContext";
 import { useNavigate } from "react-router-dom";
 import Clock from "../components/Clock";
+import Header from "../components/Header";
 
 export default function Dashboard() {
   const { removeToken, token } = useToken();
@@ -12,9 +13,11 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-black p-8">
+    <div className="min-h-screen">
+      <Header />
+      <div className="p-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-black rounded-lg shadow-lg p-8 border-2 border-white">
+        <div className="bg-black bg-opacity-80 rounded-lg shadow-lg p-8 border-2 border-white">
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-4xl font-bold text-white mb-4">Pagina Administrativa</h1>
             <button
@@ -67,6 +70,7 @@ export default function Dashboard() {
             </button> 
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
